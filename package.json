@@ -1,0 +1,58 @@
+{
+  "name": "@roy/cli",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "try": "bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./bin/cli.js",
+    "lint": "eslint '{lib,commands,actions}/**/*.ts' --fix",
+    "commit": "git-cz",
+    "release": "standard-version"
+  },
+  "author": "Roy Tang <roytang1005@qq.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roytang1005/try-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roytang1005/try-cli/issues"
+  },
+  "homepage": "https://github.com/roytang1005/try-cli#readme",
+  "contributors": [
+    "Roy Tang"
+  ],
+  "dependencies": {
+    "commander": "8.2.0",
+    "typescript": "4.4.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
+    "@commitlint/cz-commitlint": "^13.2.1",
+    "@types/node": "16.11.1",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "commitizen": "^4.2.4",
+    "conventional-changelog-conventionalcommits": "^4.6.1",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "husky": "^7.0.4",
+    "inquirer": "^8.2.0",
+    "lint-staged": "^11.2.3",
+    "prettier": "^2.4.1",
+    "standard-version": "^9.3.2"
+  },
+  "engines": {
+    "node": ">= 12"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
+}
